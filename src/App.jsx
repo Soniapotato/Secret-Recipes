@@ -37,6 +37,7 @@ export default function App () {
   return (
     <>
       <History/>
+      <div className="brand-name"> HomeMade</div>
     <div className="master-app">
       <div className="inner-div">
         <div className="dotted">

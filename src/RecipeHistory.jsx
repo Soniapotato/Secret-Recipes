@@ -56,7 +56,6 @@ const updateName = (e) => {
     setFetched(false);
   }
   setRecipe(e.target.value);
-  console.log(e.target.value)
 }
   Modal.setAppElement('#root');
 return (
@@ -68,13 +67,13 @@ return (
         onRequestClose={() => setOpen(false)}
         // style={oldRecipeStyles} >
         >
-          <input placeholder="recipe name" value={recipe} onChange={updateName}/>
+          <input className="eacb-history-item" placeholder="recipe name" value={recipe} onChange={updateName}/>
           <button onClick={searchDB}> Find Mine</button>
           {
             err ? (<div>No Recipes Found. Try Adding It</div>) : null
           }
           {
-            fetched ? (<div> {calories}</div>) : null
+            fetched ? (<div className="each-history-item"> Calories: {calories}</div>) : null
           }
           {
             fetched ?

@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post('/ingredients', (req, res) => {
   let stats;
-  console.log('this is title', req.body.title)
   axios.post(`https://api.edamam.com/api/nutrition-details?app_id=${process.env.APP_ID}&app_key=${process.env.API_KEY}`, {
     title: req.body.title,
     ingr: req.body.ingr
@@ -36,8 +35,6 @@ app.post('/ingredients', (req, res) => {
 
 app.get('/history', (req, res) => {
   let title = req.query.title;
-  console.log('this is paras', req.query);
-  console.log('this is title', title)
   db.findOne({title}).then((ingredients) => {
     if(ingredients === null ) {
       res.send("1");
