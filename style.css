@@ -138,3 +138,38 @@ button {
   margin-left: 2rem;
   font-size: smaller;
 }
+
+.history {
+  display: flex;
+  width:100%;
+  justify-content: right;
+}
+
+.history-form-label {
+  background-color: blanchedalmond;
+  color:rgb(125, 72, 72);
+}
+
+
+.oldRecipeStyles {
+  border:solid;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 600px;
+    opacity:1;
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(blanchedalmond, blanchedalmond) padding-box,
+     repeating-linear-gradient(-45deg,
+     rgb(125, 72, 72) 0,  rgb(125, 72, 72) 12.5%,
+     transparent 0, transparent 25%,
+     #58a 0, #58a 37.5%,
+     transparent 0, transparent 50%)
+     0 / 5em 5em;
+  }

@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import '../style.css';
 import axios from 'axios';
 import Breakdown from './Breakdown.jsx'
+import History from './Modal.jsx';
 
 export default function App () {
   const [title, setTitle ] = useState('');
   const [ingrList, setIngr] = useState('');
   const [healthStats, setStats] = useState({})
   const [render, setRender] = useState(false);
+  const [recipeLog, setLog] = useState('');
 
   const updateTitle = (e) => {
     if(title < 1 ) {
@@ -17,6 +19,9 @@ export default function App () {
   }
   const updateIngredients = (e) => {
     setIngr(e.target.value)
+  }
+  const searchRecipe  = (e) => {
+    setLog(e.target.value)
   }
   const submitinfo = () => {
     let ingr = ingrList.split('\n')
@@ -30,6 +35,8 @@ export default function App () {
     // setRender(true);
   }
   return (
+    <>
+      <History/>
     <div className="master-app">
       <div className="inner-div">
         <div className="dotted">
@@ -52,5 +59,6 @@ export default function App () {
        </div>
     </div>
     </div>
+    </>
   )
 }
