@@ -8,3 +8,12 @@ Now with HomeMade you can check to see if your homemade recipe is nutrious and h
 As you can see below you can search any creation of yours!
 
  ![alt text](demogif/firstdemo.gif)
+
+ ## What if?
+
+ What if you don't want to always have to type out the recipe to remember the calories ? Or you made something delicious and want to revisit that exact recipe?
+
+ Click the find button and you can search a recipe based on what you titled it earlier! By clicking you can see the recipe for the older recipe as well as the calories of the entire meal! Check it out below! :
+
+
+  ![alt text](demogif/demo2.gif)
